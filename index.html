@@ -6,9 +6,32 @@
   <style>
     body {
       font-family: "Arial", sans-serif;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      padding: 0;
       background-color: #f5f9ff;
+    }
+
+    .navbar {
+      background-color: #2b5dab;
+      padding: 14px 0;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 50px 20px;
+      text-align: center;
     }
 
     h1 {
@@ -23,10 +46,6 @@
     h2 {
       margin-top: 40px;
       color: #2b5dab;
-    }
-
-    a {
-      text-decoration: none;
     }
 
     button {
@@ -46,50 +65,63 @@
   </style>
 </head>
 <body>
-  <h1>歡迎來到 Milly老師快樂學習 🧠🌈</h1>
-  <p>這是我正式版的網站首頁，之後會放上課程資訊、聯絡方式與教學影片。</p>
 
-  <h2>👉 想了解我的課程嗎？</h2>
-  <p>
-    <a href="courses.html">
-      <button>📚 查看課程介紹</button>
-    </a>
-  </p>
+  <!-- 導覽列 -->
+  <div class="navbar">
+    <a href="index.html">🏠 首頁</a>
+    <a href="courses.html">📚 課程介紹</a>
+    <a href="philosophy.html">🌟 教學理念</a>
+    <a href="gallery.html">🖼️ 成果展示</a>
+    <a href="contact.html">📋 報名表單</a>
+  </div>
 
-  <h2>🎈 認識我的教學理念</h2>
-  <p>
-    <a href="philosophy.html">
-      <button>🌟 教學理念介紹</button>
-    </a>
-  </p>
+  <!-- 內容區塊 -->
+  <div class="content">
+    <h1>歡迎來到 Milly老師快樂學習 🧠🌈</h1>
+    <p>這是我正式版的網站首頁，之後會放上課程資訊、聯絡方式與教學影片。</p>
 
-  <h2>📸 教學成果</h2>
-  <p>
-    <a href="gallery.html">
-      <button>🖼️ 成果展示頁</button>
-    </a>
-  </p>
+    <h2>👉 想了解我的課程嗎？</h2>
+    <p>
+      <a href="courses.html">
+        <button>📚 查看課程介紹</button>
+      </a>
+    </p>
 
-  <h2>📋 我要報名 / 試聽</h2>
-  <p>
-    <a href="contact.html">
-      <button>📋 填寫報名表單</button>
-    </a>
-  </p>
+    <h2>🎈 認識我的教學理念</h2>
+    <p>
+      <a href="philosophy.html">
+        <button>🌟 教學理念介紹</button>
+      </a>
+    </p>
 
-  <h2>聯絡 Milly老師 ✉️</h2>
-  <p>
-    <a href="mailto:lopigve2022@gmail.com">
-      <button>📬 寄信給我</button>
-    </a>
-  </p>
+    <h2>📸 教學成果</h2>
+    <p>
+      <a href="gallery.html">
+        <button>🖼️ 成果展示頁</button>
+      </a>
+    </p>
 
-  <p>
-    <a href="https://lin.ee/4uE52pM" target="_blank">
-      <button>💬 加入我的 LINE</button>
-    </a>
-  </p>
+    <h2>📋 我要報名 / 試聽</h2>
+    <p>
+      <a href="contact.html">
+        <button>📋 填寫報名表單</button>
+      </a>
+    </p>
+
+    <h2>聯絡 Milly老師 ✉️</h2>
+    <p>
+      <a href="mailto:lopigve2022@gmail.com">
+        <button>📬 寄信給我</button>
+      </a>
+    </p>
+
+    <p>
+      <a href="https://lin.ee/4uE52pM" target="_blank">
+        <button>💬 加入我的 LINE</button>
+      </a>
+    </p>
+  </div>
 </body>
 </html>
 
-Add gallery & contact buttons
+Add top navigation menu
