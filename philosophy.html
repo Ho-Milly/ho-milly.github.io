@@ -6,8 +6,31 @@
   <style>
     body {
       font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #fffdf5;
-      padding: 40px;
+    }
+
+    .navbar {
+      background-color: #2b5dab;
+      padding: 14px 0;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 40px 20px;
       max-width: 800px;
       margin: auto;
       line-height: 1.8;
@@ -18,7 +41,7 @@
       text-align: center;
     }
 
-    .content {
+    .content p {
       font-size: 18px;
       color: #444;
     }
@@ -38,9 +61,19 @@
   </style>
 </head>
 <body>
-  <h1>教學理念</h1>
+
+  <!-- 導覽列 -->
+  <div class="navbar">
+    <a href="index.html">🏠 首頁</a>
+    <a href="courses.html">📚 課程介紹</a>
+    <a href="philosophy.html">🌟 教學理念</a>
+    <a href="gallery.html">🖼️ 成果展示</a>
+    <a href="contact.html">📋 報名表單</a>
+  </div>
 
   <div class="content">
+    <h1>教學理念</h1>
+
     <p>🌱 我相信每一位孩子都擁有學習的潛力，只要用對方法，他們就能快樂地發芽、成長。</p>
 
     <p>📚 我的課堂不只是傳授知識，更是建立自信與好奇心的空間。透過遊戲、圖像與生活結合的方式，孩子們自然地愛上學習。</p>
@@ -50,10 +83,11 @@
     <p>👵 對銀髮族，我更願意以耐心與尊重陪伴。科技不是他們的敵人，而是他們重新參與世界的橋梁。</p>
 
     <p>💛 無論年齡、背景，我希望每位學生都能在我的陪伴下，找到屬於自己的學習節奏與光芒。</p>
-  </div>
 
-  <a href="index.html" class="back-link">⬅️ 回首頁</a>
+    <a href="index.html" class="back-link">⬅️ 回首頁</a>
+  </div>
 </body>
 </html>
 
-Fix philosophy page
+
+Add navbar to philosophy.html
