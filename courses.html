@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>課程介紹 - Milly老師快樂學習</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: "Arial", sans-serif;
@@ -15,14 +16,16 @@
       background-color: #2b5dab;
       padding: 14px 0;
       text-align: center;
+      flex-wrap: wrap;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
-      margin: 0 16px;
+      margin: 8px 12px;
       font-weight: bold;
       font-size: 16px;
+      display: inline-block;
     }
 
     .navbar a:hover {
@@ -38,6 +41,7 @@
     h1 {
       text-align: center;
       color: #2b5dab;
+      font-size: 28px;
     }
 
     .course {
@@ -51,12 +55,29 @@
     .course h2 {
       margin-top: 0;
       color: #333;
+      font-size: 20px;
     }
 
     .back-link {
       display: block;
       text-align: center;
       margin-top: 40px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .course h2 {
+        font-size: 18px;
+      }
+
+      .navbar a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
@@ -110,4 +131,5 @@
 </html>
 
 
-Add navbar to courses.html
+
+Add navbar + RWD to courses.html
