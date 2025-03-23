@@ -6,15 +6,38 @@
   <style>
     body {
       font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #fffdf5;
-      padding: 40px;
+    }
+
+    .navbar {
+      background-color: #2b5dab;
+      padding: 14px 0;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
 
     h1 {
-      color: #2b5dab;
       text-align: center;
+      color: #2b5dab;
     }
 
     .course {
@@ -38,41 +61,53 @@
   </style>
 </head>
 <body>
-  <h1>課程介紹</h1>
 
-  <div class="course">
-    <h2>🧠 幼兒數學邏輯</h2>
-    <p>適合：大班～小一</p>
-    <p>透過遊戲、圖片與德國LUK教材，啟發孩子的邏輯力與觀察力。</p>
+  <!-- 導覽列 -->
+  <div class="navbar">
+    <a href="index.html">🏠 首頁</a>
+    <a href="courses.html">📚 課程介紹</a>
+    <a href="philosophy.html">🌟 教學理念</a>
+    <a href="gallery.html">🖼️ 成果展示</a>
+    <a href="contact.html">📋 報名表單</a>
   </div>
 
-  <div class="course">
-    <h2>🐸 Kangaroo / 奧林匹克數學</h2>
-    <p>適合：小一～小六</p>
-    <p>系統化訓練，從基礎數感到邏輯推理，培養數學競賽能力。</p>
-  </div>
+  <div class="content">
+    <h1>課程介紹</h1>
 
-  <div class="course">
-    <h2>📱 數位素養 for 長輩</h2>
-    <p>適合：銀髮族</p>
-    <p>學習使用 LINE、叫車 App、網購與生活科技，提升數位生活力。</p>
-  </div>
+    <div class="course">
+      <h2>🧠 幼兒數學邏輯</h2>
+      <p>適合：大班～小一</p>
+      <p>透過遊戲、圖片與德國LUK教材，啟發孩子的邏輯力與觀察力。</p>
+    </div>
 
-  <div class="course">
-    <h2>🎲 親子桌遊與情緒引導</h2>
-    <p>適合：大班～小三</p>
-    <p>在遊戲中學習情緒表達、人際互動與專注力。</p>
-  </div>
+    <div class="course">
+      <h2>🐸 Kangaroo / 奧林匹克數學</h2>
+      <p>適合：小一～小六</p>
+      <p>系統化訓練，從基礎數感到邏輯推理，培養數學競賽能力。</p>
+    </div>
 
-  <div class="course">
-    <h2>📖 私中入學考輔導</h2>
-    <p>適合：小六</p>
-    <p>個別化指導，提升閱讀理解、數學邏輯與應試能力。</p>
-  </div>
+    <div class="course">
+      <h2>📱 數位素養 for 長輩</h2>
+      <p>適合：銀髮族</p>
+      <p>學習使用 LINE、叫車 App、網購與生活科技，提升數位生活力。</p>
+    </div>
 
-  <a href="index.html" class="back-link">⬅️ 回首頁</a>
+    <div class="course">
+      <h2>🎲 親子桌遊與情緒引導</h2>
+      <p>適合：大班～小三</p>
+      <p>在遊戲中學習情緒表達、人際互動與專注力。</p>
+    </div>
+
+    <div class="course">
+      <h2>📖 私中入學考輔導</h2>
+      <p>適合：小六</p>
+      <p>個別化指導，提升閱讀理解、數學邏輯與應試能力。</p>
+    </div>
+
+    <a href="index.html" class="back-link">⬅️ 回首頁</a>
+  </div>
 </body>
 </html>
 
 
-Add courses page
+Add navbar to courses.html
