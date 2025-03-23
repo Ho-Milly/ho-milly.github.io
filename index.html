@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Milly老師快樂學習</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: "Arial", sans-serif;
@@ -15,14 +16,16 @@
       background-color: #2b5dab;
       padding: 14px 0;
       text-align: center;
+      flex-wrap: wrap;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
-      margin: 0 16px;
+      margin: 8px 12px;
       font-weight: bold;
       font-size: 16px;
+      display: inline-block;
     }
 
     .navbar a:hover {
@@ -30,22 +33,27 @@
     }
 
     .content {
-      padding: 50px 20px;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
       text-align: center;
     }
 
     h1 {
       color: #333;
+      font-size: 28px;
     }
 
     p {
       font-size: 18px;
       color: #444;
+      line-height: 1.6;
     }
 
     h2 {
       margin-top: 40px;
       color: #2b5dab;
+      font-size: 20px;
     }
 
     button {
@@ -57,10 +65,31 @@
       font-size: 16px;
       cursor: pointer;
       margin: 10px;
+      max-width: 90%;
     }
 
     button:hover {
       background-color: #45a049;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .navbar a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      button {
+        font-size: 16px;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -75,53 +104,29 @@
     <a href="contact.html">📋 報名表單</a>
   </div>
 
-  <!-- 內容區塊 -->
   <div class="content">
     <h1>歡迎來到 Milly老師快樂學習 🧠🌈</h1>
     <p>這是我正式版的網站首頁，之後會放上課程資訊、聯絡方式與教學影片。</p>
 
     <h2>👉 想了解我的課程嗎？</h2>
-    <p>
-      <a href="courses.html">
-        <button>📚 查看課程介紹</button>
-      </a>
-    </p>
+    <a href="courses.html"><button>📚 查看課程介紹</button></a>
 
     <h2>🎈 認識我的教學理念</h2>
-    <p>
-      <a href="philosophy.html">
-        <button>🌟 教學理念介紹</button>
-      </a>
-    </p>
+    <a href="philosophy.html"><button>🌟 教學理念介紹</button></a>
 
     <h2>📸 教學成果</h2>
-    <p>
-      <a href="gallery.html">
-        <button>🖼️ 成果展示頁</button>
-      </a>
-    </p>
+    <a href="gallery.html"><button>🖼️ 成果展示頁</button></a>
 
     <h2>📋 我要報名 / 試聽</h2>
-    <p>
-      <a href="contact.html">
-        <button>📋 填寫報名表單</button>
-      </a>
-    </p>
+    <a href="contact.html"><button>📋 填寫報名表單</button></a>
 
     <h2>聯絡 Milly老師 ✉️</h2>
-    <p>
-      <a href="mailto:lopigve2022@gmail.com">
-        <button>📬 寄信給我</button>
-      </a>
-    </p>
-
-    <p>
-      <a href="https://lin.ee/4uE52pM" target="_blank">
-        <button>💬 加入我的 LINE</button>
-      </a>
-    </p>
+    <a href="mailto:lopigve2022@gmail.com"><button>📬 寄信給我</button></a>
+    <a href="https://lin.ee/4uE52pM" target="_blank"><button>💬 加入我的 LINE</button></a>
   </div>
+
 </body>
 </html>
 
-Add top navigation menu
+
+Make homepage responsive
