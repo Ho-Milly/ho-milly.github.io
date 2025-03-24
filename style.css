@@ -61,10 +61,12 @@ header {
 }
 
 .section {
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   max-width: 960px;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 
 .course-card, .offer-box {
