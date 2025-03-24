@@ -1,6 +1,3 @@
-<!-- holihi Carrd-style Template HTML -->
-<!-- Designed for a light, soft, child- and senior-friendly brand -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +6,13 @@
   <title>holihi 快樂學習</title>
   <style>
     :root {
-      --primary: #FCE67D;       /* Goose Yellow */
-      --secondary: #FFB6B9;     /* Soft Pink */
-      --accent: #A0D8EF;        /* Baby Blue */
-      --bg: #FFFDF7;            /* Creamy White */
-      --sub-bg: #FAF9F3;        /* Lighter Cream */
-      --text: #5E5E5E;          /* Body Text */
-      --heading: #4A4A4A;       /* Heading Text */
+      --primary: #FCE67D;
+      --secondary: #FFB6B9;
+      --accent: #A0D8EF;
+      --bg: #FFFDF7;
+      --sub-bg: #FAF9F3;
+      --text: #5E5E5E;
+      --heading: #4A4A4A;
     }
 
     body {
@@ -46,9 +43,10 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
       background-color: var(--sub-bg);
-      padding: 0.5rem;
+      padding: 0.75rem 1rem;
     }
 
     nav a {
@@ -62,6 +60,22 @@
       text-align: center;
       background-color: var(--accent);
       color: white;
+    }
+
+    .hero .btn {
+      background-color: white;
+      color: var(--accent);
+      font-weight: bold;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 2rem;
+      margin-top: 1rem;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: var(--primary);
+      color: var(--heading);
     }
 
     .section {
@@ -81,9 +95,16 @@
       border: none;
       padding: 0.5rem 1.5rem;
       font-size: 1rem;
-      border-radius: 12px;
+      border-radius: 2rem;
       cursor: pointer;
       color: var(--heading);
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--secondary);
+      color: white;
     }
 
     .contact-form input,
@@ -100,16 +121,19 @@
   <div class="wrapper">
     <header>holihi 快樂學習</header>
     <nav>
-      <a href="#home">首頁</a>
-      <a href="#courses">課程</a>
-      <a href="#gallery">相簿</a>
-      <a href="#contact">聯絡我們</a>
+      <a href="index.html">首頁</a>
+      <a href="courses.html">課程介紹</a>
+      <a href="philosophy.html">教學理念</a>
+      <a href="philosophy-2.html">教學價值</a>
+      <a href="tuition-offer.html">限時優惠</a>
+      <a href="gallery.html">成果展示</a>
+      <a href="contact.html">報名表單</a>
     </nav>
 
     <section class="hero">
       <h1>陪伴每一位孩子與長輩快樂學習</h1>
       <p>點亮每一顆米的可能</p>
-      <button class="btn">立即報名</button>
+      <a href="contact.html" class="btn">立即報名</a>
     </section>
 
     <section class="section" id="courses">
