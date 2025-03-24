@@ -1,63 +1,141 @@
+<!-- holihi Carrd-style Template HTML -->
+<!-- Designed for a light, soft, child- and senior-friendly brand -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Milly老師快樂學習</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>holihi 快樂學習</title>
+  <style>
+    :root {
+      --primary: #FCE67D;       /* Goose Yellow */
+      --secondary: #FFB6B9;     /* Soft Pink */
+      --accent: #A0D8EF;        /* Baby Blue */
+      --bg: #FFFDF7;            /* Creamy White */
+      --sub-bg: #FAF9F3;        /* Lighter Cream */
+      --text: #5E5E5E;          /* Body Text */
+      --heading: #4A4A4A;       /* Heading Text */
+    }
 
-  <link rel="stylesheet" href="style.css">
+    body {
+      font-family: 'Nunito', 'Noto Sans TC', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+    }
 
+    .wrapper {
+      width: 100%;
+      max-width: 1024px;
+    }
 
+    header {
+      background-color: var(--primary);
+      padding: 1rem 2rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: var(--heading);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--sub-bg);
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--heading);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: var(--accent);
+      color: white;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .course-card {
+      background-color: var(--sub-bg);
+      border-radius: 16px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .btn {
+      background-color: var(--primary);
+      border: none;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      color: var(--heading);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
+  <div class="wrapper">
+    <header>holihi 快樂學習</header>
+    <nav>
+      <a href="#home">首頁</a>
+      <a href="#courses">課程</a>
+      <a href="#gallery">相簿</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
 
-  <!-- 導覽列 -->
-  <div class="navbar">
-    <a href="index.html">🏠 首頁</a>
-    <a href="courses.html">📚 課程介紹</a>
-    <a href="philosophy.html">🌟 教學理念</a>
-    <a href="gallery.html">🖼️ 成果展示</a>
-    <a href="contact.html">📋 報名表單</a>
+    <section class="hero">
+      <h1>陪伴每一位孩子與長輩快樂學習</h1>
+      <p>點亮每一顆米的可能</p>
+      <button class="btn">立即報名</button>
+    </section>
+
+    <section class="section" id="courses">
+      <h2 style="color: var(--heading);">課程介紹</h2>
+      <div class="course-card">
+        <h3>兒童邏輯思維課</h3>
+        <p>針對小一至小二設計的邏輯啟發課程，採用德國教材。</p>
+        <button class="btn">加入課程</button>
+      </div>
+      <div class="course-card">
+        <h3>銀髮數位生活課</h3>
+        <p>協助長輩學習使用手機 App，提升數位生活品質。</p>
+        <button class="btn">加入課程</button>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 style="color: var(--heading);">聯絡我們</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="姓名" required />
+        <input type="email" placeholder="電子郵件" required />
+        <textarea rows="4" placeholder="留言訊息"></textarea>
+        <button type="submit" class="btn">送出</button>
+      </form>
+      <p>或透過 LINE / Gmail 與我們聯繫</p>
+    </section>
   </div>
-
-  <div class="content">
-    <h1>歡迎來到 Milly老師快樂學習 🧠🌈</h1>
-    
-    <div class="tagline-section">
-  <p>🌱 我陪孩子找到擅長的事，也陪他走過困難的路。</p>
-  <p>💛 這不是一堂課，而是一段陪孩子發現自我的旅程。</p>
-  <p>🌟 孩子需要的不是更多教材，而是一個懂他的人。</p>
-</div>
-    
-    <p>這是我正式版的網站首頁，之後會放上課程資訊、聯絡方式與教學影片。</p>
-
-    <h2>👉 想了解我的課程嗎？</h2>
-    <a href="courses.html"><button>📚 查看課程介紹</button></a>
-
-    <h2>🎈 認識我的教學理念</h2>
-    <a href="philosophy.html"><button>🌟 教學理念介紹</button></a>
-
-    <h2>📸 教學成果</h2>
-    <a href="gallery.html"><button>🖼️ 成果展示頁</button></a>
-
-    <h2>🎉 想看看現在有什麼限時優惠嗎？</h2>
-<a href="tuition-offer.html"><button>🧡 查看限時優惠</button></a>
-
-
-    <h2>💰 想了解課程為什麼值得這個價值？</h2>
-<a href="tuition.html"><button>💡 查看收費說明</button></a>
-
-
-    <h2>📋 我要報名 / 試聽</h2>
-    <a href="contact.html"><button>📋 填寫報名表單</button></a>
-
-    <h2>聯絡 Milly老師 ✉️</h2>
-    <a href="mailto:lopigve2022@gmail.com"><button>📬 寄信給我</button></a>
-    <a href="https://lin.ee/4uE52pM" target="_blank"><button>💬 加入我的 LINE</button></a>
-  </div>
-
 </body>
 </html>
-
-
-
