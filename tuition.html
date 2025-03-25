@@ -9,17 +9,46 @@
     .highlight {
       background-color: var(--accent);
       color: white;
-      padding: 0.4rem 1rem;
-      border-radius: 1.5rem;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
       font-weight: bold;
+      font-size: 1.1rem;
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s;
+    }
+    .highlight:hover {
+      background-color: var(--secondary);
     }
     .course-card ul {
-      padding-left: 1.2rem;
+      padding-left: 1.4rem;
+    }
+    .course-card ul li {
+      margin-bottom: 0.5rem;
     }
     .course-card ul li::marker {
       color: var(--secondary);
+    }
+    .section h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .course-card {
+      background-color: var(--sub-bg);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .course-card h3 {
+      color: var(--heading);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .course-card p, .course-card li {
+      font-size: 1rem;
+      color: var(--text);
     }
   </style>
 </head>
@@ -39,7 +68,7 @@
     </nav>
 
     <section class="section">
-      <h1 style="color: var(--heading); text-align: center;">💰 收費制度說明</h1>
+      <h1 style="color: var(--heading);">💰 收費制度說明</h1>
 
       <div class="course-card">
         <h3>🌾 為什麼我們選擇「米粒制」？</h3>
