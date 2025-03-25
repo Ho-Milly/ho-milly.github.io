@@ -1,118 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>收費說明 - holihi 快樂學習</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .highlight {
-      background-color: var(--accent);
-      color: white;
-      padding: 0.6rem 1.4rem;
-      border-radius: 2rem;
-      font-weight: bold;
-      font-size: 1.1rem;
-      display: inline-block;
-      margin-top: 1.5rem;
-      transition: background-color 0.3s;
-    }
-    .highlight:hover {
-      background-color: var(--secondary);
-    }
-    .course-card ul {
-      padding-left: 1.4rem;
-    }
-    .course-card ul li {
-      margin-bottom: 0.5rem;
-    }
-    .course-card ul li::marker {
-      color: var(--secondary);
-    }
-    .section h1 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .course-card {
-      background-color: var(--sub-bg);
-      border-radius: 20px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-    .course-card h3 {
-      color: var(--heading);
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-    }
-    .course-card p, .course-card li {
-      font-size: 1rem;
-      color: var(--text);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>收費說明 - Milly老師快樂學習</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>holihi 快樂學習</header>
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="courses.html">課程介紹</a>
-      <a href="philosophy.html">教學理念</a>
-      <a href="philosophy-2.html">教學價值</a>
-      <a href="tuition-offer.html">限時優惠</a>
-      <a href="tuition.html">收費說明</a>
-      <a href="gallery.html">成果展示</a>
-      <a href="contact.html">報名表單</a>
-      <a href="qa.html">Q&A</a>
-    </nav>
+  <header>holihi 快樂學習</header>
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+  </script>
 
+  <main class="content">
     <section class="section">
-      <h1 style="color: var(--heading);">💰 收費制度說明</h1>
+      <h1>收費說明</h1>
 
-      <div class="course-card">
-        <h3>🌾 為什麼我們選擇「米粒制」？</h3>
-        <p>
-          為了讓學習更彈性、跨年齡共學更自由，我們設計了 <strong>holihi 米粒制</strong>，
-          讓家長可依據孩子與長輩的不同學習需求，自由搭配合適課程。
-        </p>
+      <div class="value-block">
+        <h2>💰 米粒點數制</h2>
+        <p>我們使用「米粒點數制」作為課程收費方式，讓家長能夠彈性安排孩子的學習計畫。</p>
+        <a href="contact.html" class="btn">立即購買米粒</a>
       </div>
 
-      <div class="course-card">
-        <h3>📌 米粒使用說明</h3>
+      <div class="value-block">
+        <h2>📌 購買方式</h2>
         <ul>
-          <li>🧠 幼兒邏輯課：1 粒 / 堂</li>
-          <li>📖 私中入學考輔導：2 粒 / 堂</li>
-          <li>🎲 親子桌遊與情緒課：1 粒 / 堂</li>
-          <li>📱 銀髮數位生活課：1 粒 / 堂</li>
+          <li>一次購買 10 米粒：NT$ 1,000</li>
+          <li>一次購買 30 米粒：NT$ 2,850（95 折）</li>
+          <li>一次購買 50 米粒：NT$ 4,500（9 折）</li>
         </ul>
       </div>
 
-      <div class="course-card">
-        <h3>🎁 米粒儲值方案</h3>
-        <p>以下為目前米粒儲值價格（可於報名後選擇購買）：</p>
+      <div class="value-block">
+        <h2>🎓 課程扣點參考</h2>
         <ul>
-          <li>10 粒：NT$1000</li>
-          <li>20 粒：NT$1900（95 折）</li>
-          <li>30 粒：NT$2700（9 折）</li>
+          <li>幼兒數學邏輯課（1 小時）：2 米粒</li>
+          <li>奧林匹克數學訓練（1.5 小時）：3 米粒</li>
+          <li>銀髮數位生活課（0.5 小時）：1 米粒</li>
+          <li>親子桌遊與情緒引導（1 小時）：2 米粒</li>
+          <li>私中入學考輔導（1 小時）：3 米粒</li>
         </ul>
       </div>
 
-      <div class="course-card">
-        <h3>🧾 使用與退款機制</h3>
-        <ul>
-          <li>購買後將收到米粒帳戶通知，可自由安排課程</li>
-          <li>如有課程取消，可將米粒轉用其他課程</li>
-          <li>若半年內未使用，米粒可延長一次有效期限</li>
-        </ul>
-      </div>
-
-      <div class="course-card" style="text-align: center;">
-        <h3>📍 如何開始？</h3>
-        <p>點選下方按鈕前往報名頁面，我們將依據您的需求推薦合適課程：</p>
-        <a href="contact.html" class="highlight">立即報名</a>
+      <div class="value-block">
+        <h2>📆 使用期限</h2>
+        <p>購買後的米粒點數可於 6 個月內自由使用，不限課程類型。</p>
       </div>
     </section>
-  </div>
+  </main>
 </body>
 </html>
