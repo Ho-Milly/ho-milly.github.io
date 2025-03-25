@@ -5,66 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>成果展示 - Milly老師快樂學習</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .gallery-card {
-      background-color: var(--sub-bg);
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .gallery-card h3 {
-      padding: 1rem;
-      font-size: 1.1rem;
-      color: var(--heading);
-    }
-  </style>
 </head>
 <body>
   <header>holihi 快樂學習</header>
-  <nav>
-    <a href="index.html">首頁</a>
-    <a href="courses.html">課程介紹</a>
-    <a href="philosophy.html">教學理念</a>
-    <a href="philosophy-2.html">教學價值</a>
-    <a href="tuition.html">收費說明</a>
-    <a href="tuition-offer.html">限時優惠</a>
-    <a href="gallery.html">成果展示</a>
-    <a href="contact.html">報名表單</a>
-  </nav>
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+  </script>
 
-  <section class="section">
-    <h1>🖼️ 成果展示</h1>
-    <p>看看我們學員在課堂上的學習片段與成長足跡：</p>
-
-    <div class="gallery-grid">
-      <div class="gallery-card">
-        <img src="https://via.placeholder.com/400x300?text=兒童邏輯課" alt="兒童邏輯課成果圖">
-        <h3>兒童邏輯課：專注動腦的時刻</h3>
+  <main class="content">
+    <section class="section">
+      <h1>📸 成果展示</h1>
+      <p>歡迎參觀我們課堂中的點滴與孩子們的成長記錄！</p>
+      <div class="gallery">
+        <img src="images/gallery1.jpg" alt="上課情境 1">
+        <img src="images/gallery2.jpg" alt="上課情境 2">
+        <img src="images/gallery3.jpg" alt="學生作品 1">
+        <img src="images/gallery4.jpg" alt="學生作品 2">
+        <img src="images/gallery5.jpg" alt="親子互動活動">
       </div>
-      <div class="gallery-card">
-        <img src="https://via.placeholder.com/400x300?text=銀髮數位課" alt="銀髮數位課成果圖">
-        <h3>銀髮數位課：長輩學用手機初體驗</h3>
-      </div>
-      <div class="gallery-card">
-        <img src="https://via.placeholder.com/400x300?text=親子活動" alt="親子活動照片">
-        <h3>親子活動日：一起玩桌遊一起笑</h3>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
