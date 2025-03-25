@@ -1,54 +1,78 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>限時優惠 - Milly老師快樂學習</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>限時優惠 - holihi 快樂學習</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .highlight {
+      background-color: var(--accent);
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 1.5rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .course-card ul {
+      padding-left: 1.2rem;
+    }
+    .course-card ul li::marker {
+      color: var(--secondary);
+    }
+  </style>
 </head>
 <body>
-  <header>holihi 快樂學習</header>
-  <nav>
-    <a href="index.html">首頁</a>
-    <a href="courses.html">課程介紹</a>
-    <a href="philosophy.html">教學理念</a>
-    <a href="philosophy-2.html">教學價值</a>
-    <a href="tuition.html">收費說明</a>
-    <a href="tuition-offer.html">限時優惠</a>
-    <a href="gallery.html">成果展示</a>
-    <a href="contact.html">報名表單</a>
-  </nav>
+  <div class="wrapper">
+    <header>holihi 快樂學習</header>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="courses.html">課程介紹</a>
+      <a href="philosophy.html">教學理念</a>
+      <a href="philosophy-2.html">教學價值</a>
+      <a href="tuition-offer.html">限時優惠</a>
+      <a href="tuition.html">收費說明</a>
+      <a href="gallery.html">成果展示</a>
+      <a href="contact.html">報名表單</a>
+      <a href="qa.html">Q&A</a>
+    </nav>
 
-  <section class="section">
-    <h1>🎉 限時優惠活動</h1>
+    <section class="section">
+      <h1 style="color: var(--heading); text-align: center;">🎈 限時優惠</h1>
 
-    <div class="course-card">
-      <h3>🌟 新學期優惠中！</h3>
-      <p>
-        凡於 <strong>4/30 前報名</strong> 任一課程，即可享有：<br>
-        ・💵 首月學費 95 折優惠<br>
-        ・👨‍👩‍👧‍👦 同家庭第二位孩子再享 9 折<br>
-        ・🎁 贈送教具乙份＋教學影片預覽<br>
-        數量有限，額滿即止！
-      </p>
-    </div>
+      <div class="course-card">
+        <h3>🎉 優惠一：首次報名加贈點數</h3>
+        <p>首次報名任一課程，立即加贈 <strong>2 點</strong> 可使用於所有課程。</p>
+      </div>
 
-    <div class="course-card">
-      <h3>🎁 老生推薦禮</h3>
-      <p>
-        老師陪伴，也歡迎你成為推廣的力量：<br>
-        ・成功推薦新生報名課程，回饋 💳 抵用金 $200<br>
-        ・再享 🎲 桌遊體驗課乙次（適用於兒童邏輯課）
-      </p>
-    </div>
+      <div class="course-card">
+        <h3>🎯 優惠二：購買點數越多越優惠</h3>
+        <ul>
+          <li>購買 10 點：<strong>NT$1000</strong></li>
+          <li>購買 20 點：<strong>NT$1900（95 折）</strong></li>
+          <li>購買 30 點：<strong>NT$2700（9 折）</strong></li>
+        </ul>
+      </div>
 
-    <div class="course-card">
-      <h3>📣 注意事項</h3>
-      <p>
-        ・優惠可併用，每位新生限享一次首報優惠<br>
-        ・推薦回饋需於報名表註記推薦人，並完成付款
-      </p>
-    </div>
-  </section>
+      <div class="course-card">
+        <h3>📌 點數制說明</h3>
+        <p>我們採用彈性點數制度，您可自由選擇課程、彈性安排上課時間：</p>
+        <ul>
+          <li>幼兒邏輯課（一堂）：<strong>1 點</strong></li>
+          <li>私中考試輔導（一堂）：<strong>2 點</strong></li>
+          <li>親子桌遊課（一堂）：<strong>1 點</strong></li>
+          <li>銀髮數位課（一堂）：<strong>1 點</strong></li>
+        </ul>
+        <p>更多詳細資訊 👉 <a href="tuition.html" style="color: var(--accent); font-weight: bold;">收費說明頁面</a></p>
+      </div>
+
+      <div class="course-card" style="text-align: center;">
+        <h3>📍 如何開始？</h3>
+        <p>點選下方按鈕前往報名頁面，我們將依據您的需求推薦合適課程：</p>
+        <a href="contact.html" class="highlight">立即報名</a>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
