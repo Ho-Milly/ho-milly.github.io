@@ -14,15 +14,15 @@
       <h1 style="margin: 0; font-size: 1.8rem; color: var(--heading);">holihi 快樂學習</h1>
     </header>
 
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="courses.html">課程介紹</a>
-      <a href="philosophy.html">教學理念</a>
-      <a href="philosophy-2.html">教學價值</a>
-      <a href="tuition-offer.html">限時優惠</a>
-      <a href="gallery.html">成果展示</a>
-      <a href="contact.html">報名表單</a>
-    </nav>
+  <div id="nav-placeholder"></div>
+<script>
+  fetch('nav.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>
+
 
     <section class="hero">
       <h1>陪伴每一位孩子與長輩快樂學習</h1>
