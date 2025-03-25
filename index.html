@@ -4,122 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>holihi 快樂學習</title>
-  <style>
-    :root {
-      --primary: #FCE67D;
-      --secondary: #FFB6B9;
-      --accent: #A0D8EF;
-      --bg: #FFFDF7;
-      --sub-bg: #FAF9F3;
-      --text: #5E5E5E;
-      --heading: #4A4A4A;
-    }
-
-    body {
-      font-family: 'Nunito', 'Noto Sans TC', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      display: flex;
-      justify-content: center;
-    }
-
-    .wrapper {
-      width: 100%;
-      max-width: 1024px;
-    }
-
-    header {
-      background-color: var(--primary);
-      padding: 1rem 2rem;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.8rem;
-      color: var(--heading);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      background-color: var(--sub-bg);
-      padding: 0.75rem 1rem;
-    }
-
-    nav a {
-      color: var(--heading);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      padding: 3rem 1rem;
-      text-align: center;
-      background-color: var(--accent);
-      color: white;
-    }
-
-    .hero .btn {
-      background-color: white;
-      color: var(--accent);
-      font-weight: bold;
-      border: none;
-      padding: 0.75rem 2rem;
-      border-radius: 2rem;
-      margin-top: 1rem;
-      transition: 0.3s;
-    }
-
-    .hero .btn:hover {
-      background-color: var(--primary);
-      color: var(--heading);
-    }
-
-    .section {
-      padding: 2rem;
-    }
-
-    .course-card {
-      background-color: var(--sub-bg);
-      border-radius: 16px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .btn {
-      background-color: var(--primary);
-      border: none;
-      padding: 0.5rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 2rem;
-      cursor: pointer;
-      color: var(--heading);
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: var(--secondary);
-      color: white;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo-holihi.png">
 </head>
 <body>
   <div class="wrapper">
-    <header>holihi 快樂學習</header>
+    <header style="text-align: center; padding: 1rem;">
+      <img src="images/logo-holihi.png" alt="holihi logo" style="height: 60px;">
+      <h1 style="margin: 0; font-size: 1.8rem; color: var(--heading);">holihi 快樂學習</h1>
+    </header>
+
     <nav>
       <a href="index.html">首頁</a>
       <a href="courses.html">課程介紹</a>
