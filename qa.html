@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>常見問答 - holihi 快樂學習</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&A 常見問題 - Milly老師快樂學習</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>holihi 快樂學習</header>
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="courses.html">課程介紹</a>
-      <a href="philosophy.html">教學理念</a>
-      <a href="philosophy-2.html">教學價值</a>
-      <a href="tuition-offer.html">限時優惠</a>
-      <a href="gallery.html">成果展示</a>
-      <a href="contact.html">報名表單</a>
-      <a href="qa.html">Q&A</a>
-    </nav>
+  <header>holihi 快樂學習</header>
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+  </script>
 
+  <main class="content">
     <section class="section">
-      <h1 style="color: var(--heading); text-align: center;">常見問答 Q&A</h1>
+      <h1>❓ 常見問題 Q&A</h1>
 
-      <div class="course-card">
-        <h3>Q1：課程如何報名？</h3>
-        <p>A：您可以直接點選網站上的「立即報名」按鈕，或至「報名表單」頁面填寫資料。</p>
+      <div class="qa-block">
+        <h3>📌 Q：課程有哪些年齡層可以參加？</h3>
+        <p>我們提供幼兒、小學生與銀髮族課程，皆可根據需求選擇適合課程。</p>
       </div>
 
-      <div class="course-card">
-        <h3>Q2：課程適合哪些年齡層？</h3>
-        <p>A：我們的課程設計橫跨學齡前兒童、小學生與銀髮長輩，詳情請參考課程介紹頁面。</p>
+      <div class="qa-block">
+        <h3>📌 Q：如何報名課程？</h3>
+        <p>可點選頁面中的「報名表單」按鈕或前往聯絡我們頁面填寫表單。</p>
       </div>
 
-      <div class="course-card">
-        <h3>Q3：是否可以試聽？</h3>
-        <p>A：有部分課程提供體驗堂，請透過聯絡我們頁面詢問我們的安排。</p>
+      <div class="qa-block">
+        <h3>📌 Q：課程是否提供試聽？</h3>
+        <p>部分課程可提供試聽體驗，歡迎來信或LINE洽詢。</p>
       </div>
 
-      <div class="course-card">
-        <h3>Q4：你們的教學理念是什麼？</h3>
-        <p>A：我們強調「陪伴式教育」，相信每位孩子與長輩都能在溫暖中學習與成長，詳見「教學理念」頁面。</p>
+      <div class="qa-block">
+        <h3>📌 Q：點數「米粒」是什麼？</h3>
+        <p>家長可先儲值購買米粒，再依據不同課程所需米粒數量進行扣點，彈性安排課程。</p>
       </div>
 
-      <div class="course-card">
-        <h3>Q5：課程費用怎麼計算？</h3>
-        <p>A：我們採用點數制度，購買點數後可依課程類型扣點，詳見「限時優惠」與「收費說明」頁面。</p>
+      <div class="qa-block">
+        <h3>📌 Q：有哪些付款方式？</h3>
+        <p>目前提供LINE Pay、轉帳、或現場付款，付款後會收到對應米粒點數。</p>
       </div>
+
     </section>
-  </div>
+  </main>
 </body>
 </html>
