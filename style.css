@@ -200,4 +200,27 @@ iframe {
   width: 120px;
   margin-top: 0.5rem;
 }
+.site-footer {
+  background-color: var(--sub-bg);
+  color: var(--text);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+  border-top: 1px solid #eee;
+}
+
+.site-footer a {
+  color: var(--heading);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.line-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
 
