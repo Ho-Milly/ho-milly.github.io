@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>課程介紹 - holihi 快樂學習</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .course-review {
+      background-color: var(--bg);
+      border-left: 4px solid var(--accent);
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 12px;
+      font-style: italic;
+      color: var(--text);
+    }
+  </style>
 </head>
 <body>
   <header>holihi 快樂學習</header>
@@ -20,52 +31,48 @@
   <main class="content">
     <section class="section">
       <h1>📚 課程介紹</h1>
-      <div class="course-list">
-        <div class="course-card">
-          <h3>🐣 幼兒數學邏輯</h3>
-          <p class="description">適合大班～小一，透過德國教材與遊戲啟發邏輯觀察力。</p>
-          <div class="reviews">
-            「孩子上完會主動思考問題了！」<br>
-            「老師很會引導，孩子好喜歡。」
-          </div>
-        </div>
 
-        <div class="course-card">
-          <h3>🐸 Kangaroo / 奧林匹克數學</h3>
-          <p class="description">適合小一～小六，從基礎數感到邏輯推理，培養數學競賽力。</p>
-          <div class="reviews">
-            「比學校更有挑戰，但又很有趣！」<br>
-            「老師會針對孩子程度給鼓勵和題目。」
-          </div>
-        </div>
-
-        <div class="course-card">
-          <h3>📱 銀髮數位生活</h3>
-          <p class="description">幫助長者學會使用 LINE、叫車 App、生活科技。</p>
-          <div class="reviews">
-            「媽媽第一次自己叫車超開心！」<br>
-            「從排斥到期待每週上課，好感動～」
-          </div>
-        </div>
-
-        <div class="course-card">
-          <h3>🎲 親子桌遊與情緒引導</h3>
-          <p class="description">透過遊戲學習情緒表達與人際互動，適合大班～小三。</p>
-          <div class="reviews">
-            「孩子會說出自己感覺了！」<br>
-            「親子溝通變得更順了～」
-          </div>
-        </div>
-
-        <div class="course-card">
-          <h3>📖 私中入學考輔導</h3>
-          <p class="description">個別化輔導小六學生考私中，提升理解力與數學能力。</p>
-          <div class="reviews">
-            「有系統、有效率，很值得！」<br>
-            「老師會針對每週狀況給家長建議。」
-          </div>
-        </div>
+      <div class="course-card">
+        <h3 style="color: var(--heading);">🧠 幼兒數學邏輯</h3>
+        <p>適合：大班～小一</p>
+        <p>透過遊戲、圖片與德國 LUK 教材，啟發孩子的邏輯力與觀察力。</p>
+        <div class="course-review">「老師的引導很有耐心，孩子每次都玩得很開心！」</div>
+        <button class="btn">了解更多</button>
       </div>
+
+      <div class="course-card">
+        <h3 style="color: var(--heading);">🐸 Kangaroo / 奧林匹克數學</h3>
+        <p>適合：小一～小六</p>
+        <p>系統化訓練，從基礎數感到邏輯推理，培養數學競賽能力。</p>
+        <div class="course-review">「小孩數學進步很多，對解題變得有自信了！」</div>
+        <button class="btn">了解更多</button>
+      </div>
+
+      <div class="course-card">
+        <h3 style="color: var(--heading);">📱 數位素養 for 長輩</h3>
+        <p>適合：銀髮族</p>
+        <p>學習使用 LINE、叫車 App、網購與生活科技，提升數位生活力。</p>
+        <div class="course-review">「媽媽學會自己叫車和看公車時間，覺得自己很厲害！」</div>
+        <button class="btn">了解更多</button>
+      </div>
+
+      <div class="course-card">
+        <h3 style="color: var(--heading);">🎲 親子桌遊與情緒引導</h3>
+        <p>適合：大班～小三</p>
+        <p>在遊戲中學習情緒表達、人際互動與專注力。</p>
+        <div class="course-review">「桌遊真的讓我們親子時間更有品質！」</div>
+        <button class="btn">了解更多</button>
+      </div>
+
+      <div class="course-card">
+        <h3 style="color: var(--heading);">📖 私中入學考輔導</h3>
+        <p>適合：小六</p>
+        <p>個別化指導，提升閱讀理解、數學邏輯與應試能力。</p>
+        <div class="course-review">「老師會根據弱點加強，孩子考前信心大增！」</div>
+        <button class="btn">了解更多</button>
+      </div>
+
+      <a href="index.html" class="back-link">⬅️ 回首頁</a>
     </section>
   </main>
 </body>
