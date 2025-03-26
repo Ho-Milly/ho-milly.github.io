@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>教學團隊介紹 - holihi 快樂學習</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>holihi 快樂學習</header>
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main class="content">
+    <section class="section">
+      <h1>👩‍🏫 教學團隊介紹</h1>
+
+      <div class="teacher-card">
+        <img src="images/milly.png" alt="Milly 老師頭像" class="teacher-photo" />
+        <h3>Milly 老師</h3>
+        <p>
+          創辦人，主修心理學與教育設計，擅長兒童邏輯啟發與銀髮族數位教學。
+          教學風格溫暖細心，善於引導孩子與長者建立自信與學習動機。
+        </p>
+      </div>
+
+      <div class="teacher-card">
+        <img src="images/teacher-placeholder.png" alt="教師代表" class="teacher-photo" />
+        <h3>誠徵合作教師</h3>
+        <p>
+          我們正積極尋找具備耐心、熱忱與教育使命感的老師加入教學行列。
+          若您擁有教學經驗並希望透過平台推廣課程，歡迎與我們聯繫！
+        </p>
+      </div>
+
+      <div class="teacher-card">
+        <h3>🙌 關於合作與媒合</h3>
+        <p>
+          未來我們也將提供課程平台與教師媒合服務，協助更多優秀的老師被看見，
+          同時也為學生和家長帶來更彈性多元的課程選擇。
+        </p>
+        <p>
+          📬 歡迎聯絡我們：<br>
+          LINE官方帳號｜holihi 教育<br>
+          Email｜milly901119@gmail.com
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
