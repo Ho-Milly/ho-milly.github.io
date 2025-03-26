@@ -58,5 +58,14 @@
       <p>或透過 LINE / Gmail 與我們聯繫</p>
     </section>
   </main>
+  <div id="footer-placeholder"></div>
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
 </body>
 </html>
