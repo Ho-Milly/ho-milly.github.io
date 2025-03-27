@@ -275,3 +275,41 @@ iframe {
   margin-bottom: 0.5rem;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.site-logo {
+  height: 48px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  background-color: white;
+  padding: 4px;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--heading);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--sub-bg);
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: var(--heading);
+  text-decoration: none;
+  font-weight: bold;
+}
